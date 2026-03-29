@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
@@ -41,5 +43,210 @@
                 <p style="color: #94a3b8; font-size: 0.8rem;">Image Placeholder: Modern Apartment Interior</p>
             </div>
         </div>
+
+        <section class="contact-form">
+            <h2>Contact Agent for Site Visit</h2>
+            <p style="margin-bottom: 30px;">Schedule your private viewing today by filling the form below.</p>
+
+            <form action="#">
+                <label>Full Name</label>
+                <input type="text" placeholder="e.g. Rahul Sharma" required>
+
+                <label>Email Address</label>
+                <input type="email" placeholder="rahul@example.com" required>
+
+                <label>Property Interest</label>
+                <select required>
+                    <option value="">Select a property</option>
+                    <option>Mumbai Luxury Villa</option>
+                    <option>Pune Modern Apartment</option>
+                    <option>Other / General Inquiry</option>
+                </select>
+
+                <label>Inquiry Message</label>
+                <textarea rows="4" placeholder="I would like to visit this property next Sunday..."></textarea>
+
+                <button type="submit">Send Visit Inquiry</button>
+            </form>
+        </section>
+    </div>
+
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --bg: #f8fafc;
+            --text: #334155;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 50px 20px;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .property-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .property-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 0.9rem;
+            padding: 5px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        li::before {
+            content: "✓ ";
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: var(--accent);
+        }
+
+        .designer-copyright {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+
+        .designer-copyright span {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            .property-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+
+    <footer class="designer-copyright">
+        © Designed & Developed by <span>Uday</span>
+    </footer>
+
 </body>
+
 </html>
