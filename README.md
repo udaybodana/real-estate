@@ -1,22 +1,20 @@
-# Real Estate
+# 🏡 Real Estate
 
-A professional property listing project designed to demonstrate structured HTML layouts using Property Cards, logical grouping, and inquiry forms. This project showcases how core HTML elements can be used to build a business-oriented interface.
+A structured and premium real estate portfolio page. It showcases detailed property listing cards alongside a professional inquiry form for booking site visits.
 
-## 🌟 Key Features
-- **Property Grid Layout**: Displays listings in a clean, multi-column grid using modern CSS principles.
-- **Dynamic Content Cards**: Each listing is organized within a dedicated "Card" structure for clear information hierarchy.
-- **Advanced Inquiry System**: A comprehensive contact form incorporating Select menus, Multi-line textareas, and validated inputs.
-- **Visual Placeholders**: Demonstrates placement for high-resolution property media while maintaining a "Pure HTML/CSS" focus.
+### ✨ Features
+- Responsive property grid layout using modern CSS Grid.
+- Interactive property cards with hover lifting effects and status badges.
+- Clean checklist layout for property features.
+- Full contact form including text, email, dropdown selections, and text areas.
 
-## 🛠️ Tech Stack
-- **HTML5**: Core focus on Semantic sections, Grid-ready structures, and Forms.
-- **CSS3 (Internal)**: Light styling focused on "Card Design" and flexible layouts.
-- **Google Fonts**: Uses 'Inter' for a premium, clean look.
+### 🛠️ Built With
+- HTML5
+- CSS3 (CSS Grid, Flexbox, Variable Theming)
 
-## 📄 How to Use
-1. Clone this repository.
-2. Open `index.html` in any web browser.
-3. Browse the property cards and test the inquiry form.
+### 💻 How to Run
+Download the folder and open `index.html` in any web browser.
 
 ---
+
 © Designed & Developed by **Uday**
